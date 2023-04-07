@@ -9,6 +9,7 @@
     background-color: transparent;
     cursor: none;
     padding-block: 0 !important;
+    min-width: 100%;
 }
 
 .navbar-light .navbar-nav a.nav-link,
@@ -96,7 +97,10 @@
     position: relative;
     color: white;
     overflow: hidden;
-    padding: 20px !important;
+    padding: 20px 20px 5px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .main-container {
@@ -154,12 +158,13 @@ svg {
 .bootstrap {
     fill: #6D11EA;
     bottom: 20px;
+    left: 0;
 }
 
 .html5 {
     fill: #ED4C2C;
-    top: 100px;
-    left: 100px;
+    top: 120px;
+    left: 80px;
 }
 
 .css3 {
@@ -177,7 +182,7 @@ svg {
 
 .react {
     fill: #57D3F5;
-    top: 120px;
+    top: 140px;
     right: 50px;
 }
 
@@ -208,7 +213,7 @@ svg {
 
 .redux {
     bottom: 250px;
-    right: 180px;
+    left: 10px;
 }
 
 .express {
@@ -238,10 +243,31 @@ button.about-btn:focus {
     transition: all 0.5s ease-in-out;
 }
 
+.scroll-icon {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
 
-/* MEDIA QUERIES */
-/* 
-@media (max-width: 768px) {
+}
 
-    
-} */
+.down-arrow {
+    height: 15px;
+    transform: rotate(90deg);
+    animation: scroll 3s infinite;
+}
+
+
+@keyframes scroll {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
