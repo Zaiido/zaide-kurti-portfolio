@@ -1,0 +1,247 @@
+/* NAVBAR */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap');
+
+.navbar {
+    background-color: transparent;
+    cursor: none;
+    padding-block: 0 !important;
+}
+
+.navbar-light .navbar-nav a.nav-link,
+.navbar-light .navbar-nav a.nav-link:focus {
+    color: #b0b2c3;
+    font-family: "Source Code Pro";
+    cursor: none;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: white !important;
+}
+
+.navbar-light .navbar-nav a.nav-link:hover {
+    color: white;
+    cursor: none;
+}
+
+
+.navbar-light a.navbar-brand,
+.navbar-light a.navbar-brand:focus {
+    padding: 0;
+    cursor: none;
+}
+
+.navbar-light a.navbar-brand:hover {
+    cursor: none;
+}
+
+.navbar-light a.navbar-brand img {
+    width: 70px;
+}
+
+.navbar-light .navbar-toggler {
+    border: none !important;
+    cursor: none !important;
+}
+
+.navbar-light span.navbar-toggler-icon {
+    cursor: none;
+    background-image: url("data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 width=%2730%27 height=%2730%27 viewBox=%270 0 30 30%27><path stroke=%27rgba%28255, 255, 255, 1%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/></svg>");
+}
+
+.active-link {
+    text-decoration: line-through;
+}
+
+/* SCROLLBARS */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(176, 175, 175);
+}
+
+
+.ball {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: 3px solid dodgerblue;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+
+/* JUMBOTRON */
+.jumbotron {
+    background-color: #1B1B1E !important;
+    min-height: 100vh;
+    border-radius: 0 !important;
+    margin-bottom: 0 !important;
+    position: relative;
+    color: white;
+    overflow: hidden;
+    padding: 20px !important;
+}
+
+.main-container {
+    margin-top: 6rem;
+}
+
+
+.main-title {
+    font-family: "Source Code Pro";
+}
+
+.jumbotron h1 {
+    font-family: "Secular One";
+    font-size: 40px;
+}
+
+
+.element {
+    font-family: "Waiting for the Sunrise";
+    font-size: 15px;
+    margin-inline: 10px;
+    opacity: 0.1;
+    display: none;
+}
+
+.jumbotron h5 {
+    font-size: 15px;
+}
+
+.icons-container {
+    margin-top: 50px;
+    gap: 1rem;
+}
+
+a {
+    cursor: none;
+}
+
+svg {
+    fill: white;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* SKILL ICONS */
+
+.skill-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+
+.bootstrap {
+    fill: #6D11EA;
+    bottom: 20px;
+}
+
+.html5 {
+    fill: #ED4C2C;
+    top: 100px;
+    left: 100px;
+}
+
+.css3 {
+    fill: #006EAF;
+    bottom: 100px;
+    left: 100px;
+
+}
+
+.js {
+    fill: #EBD429;
+    bottom: 200px;
+    right: 50px;
+}
+
+.react {
+    fill: #57D3F5;
+    top: 120px;
+    right: 50px;
+}
+
+.nodejs {
+    fill: #7CC327;
+    top: 280px;
+    right: 20px;
+}
+
+.git {
+    fill: #E44D30;
+    top: 250px;
+    left: -7px;
+}
+
+.typescript {
+    bottom: 30px;
+    right: 50px;
+}
+
+.st0 {
+    fill: #007acc
+}
+
+.st1 {
+    fill: #fff
+}
+
+.redux {
+    bottom: 250px;
+    right: 180px;
+}
+
+.express {
+    bottom: 240px;
+    left: -20px;
+}
+
+button.about-btn {
+    border-radius: 0;
+    background-color: #c3278f;
+    border-color: #c3278f;
+    cursor: none !important;
+    padding-inline: 20px;
+}
+
+
+button.about-btn:hover,
+button.about-btn:active,
+button.about-btn:focus {
+    background-color: #c3278f !important;
+    border-color: #c3278f !important;
+    box-shadow: none !important;
+}
+
+.arrow {
+    transform: translateX(-10px);
+    transition: all 0.5s ease-in-out;
+}
+
+
+/* MEDIA QUERIES */
+/* 
+@media (max-width: 768px) {
+
+    
+} */
