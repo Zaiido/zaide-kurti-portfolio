@@ -213,12 +213,12 @@ svg {
 
 .redux {
     bottom: 250px;
-    left: 10px;
+    right: 150px;
 }
 
 .express {
     bottom: 240px;
-    left: -20px;
+    left: -10px;
 }
 
 button.about-btn {
