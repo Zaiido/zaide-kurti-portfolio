@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import MainJumbotron from "./MainJumbotron"
 import { gsap } from "gsap";
+import AboutMe from "./AboutMe";
 
 const Homepage = () => {
-
+    const [showSection, setShowSection] = useState(false)
     useEffect(() => {
         gsap.set(".ball", { xPercent: -50, yPercent: -50 });
 
@@ -20,7 +21,8 @@ const Homepage = () => {
 
     return (
         <>
-            <MainJumbotron />
+            <MainJumbotron showAbout={setShowSection} />
+            <AboutMe showSection={showSection} setShowSection={setShowSection} />
             <div className="ball"></div>
 
         </>

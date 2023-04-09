@@ -221,11 +221,16 @@ svg {
     left: -10px;
 }
 
-button.about-btn {
-    border-radius: 0;
-    background-color: #c3278f;
-    border-color: #c3278f;
+
+button {
+    border-radius: 0 !important;
     cursor: none !important;
+
+}
+
+button.about-btn {
+    background-color: #e7008a;
+    border-color: #e7008a;
     padding-inline: 20px;
 }
 
@@ -233,8 +238,8 @@ button.about-btn {
 button.about-btn:hover,
 button.about-btn:active,
 button.about-btn:focus {
-    background-color: #c3278f !important;
-    border-color: #c3278f !important;
+    background-color: #e7008a !important;
+    border-color: #e7008a !important;
     box-shadow: none !important;
 }
 
@@ -270,4 +275,64 @@ button.about-btn:focus {
     100% {
         opacity: 1;
     }
+}
+
+
+/* ABOUT ME */
+
+.about-me-container {
+    background-color: #e7008a;
+    font-family: "Source Code Pro";
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transition: all 0.9s ease-in-out;
+}
+
+.gold {
+    color: #FFD700;
+}
+
+.hideSection {
+    transform: translateY(-950px);
+}
+
+.showSection {
+    transform: translateY(0px);
+}
+
+.close {
+    transition: all 0.3s ease-in-out;
+    align-self: end;
+}
+
+.close:hover {
+    transform: rotate(90deg);
+}
+
+.waves {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 98vh;
+}
+
+.contact-btn {
+    background-color: #FFD700 !important;
+    border-color: #FFD700 !important;
+    border-radius: 0 !important;
+    cursor: none !important;
+    padding-inline: 20px !important;
+    font-weight: 600 !important;
+}
+
+
+.contact-btn:hover,
+.contact-btn:active,
+.contact-btn:focus {
+    background-color: #FFD700 !important;
+    border-color: #FFD700 !important;
+    box-shadow: none !important;
 }
