@@ -280,7 +280,7 @@ button.about-btn:focus {
 
 /* ABOUT ME */
 
-.about-me-container {
+.about-me-section {
     background-color: #e7008a;
     font-family: "Source Code Pro";
     color: white;
@@ -289,6 +289,12 @@ button.about-btn:focus {
     width: 100%;
     height: 100vh;
     transition: all 0.9s ease-in-out;
+}
+
+.about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .gold {
