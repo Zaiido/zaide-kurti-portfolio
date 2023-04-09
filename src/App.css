@@ -120,8 +120,6 @@
 
 .element {
     font-family: "Waiting for the Sunrise";
-    font-size: 15px;
-    margin-inline: 10px;
     opacity: 0.1;
     display: none;
 }
@@ -222,26 +220,16 @@ svg {
 }
 
 
+.button-container {
+    margin-top: 40px;
+}
+
 button {
     border-radius: 0 !important;
     cursor: none !important;
 
 }
 
-button.about-btn {
-    background-color: #e7008a;
-    border-color: #e7008a;
-    padding-inline: 20px;
-}
-
-
-button.about-btn:hover,
-button.about-btn:active,
-button.about-btn:focus {
-    background-color: #e7008a !important;
-    border-color: #e7008a !important;
-    box-shadow: none !important;
-}
 
 .arrow {
     transform: translateX(-10px);
@@ -281,7 +269,7 @@ button.about-btn:focus {
 /* ABOUT ME */
 
 .about-me-section {
-    background-color: #e7008a;
+    background-color: #0D5C63;
     font-family: "Source Code Pro";
     color: white;
     position: absolute;
@@ -302,7 +290,7 @@ button.about-btn:focus {
 }
 
 .hideSection {
-    transform: translateY(-950px);
+    transform: translateY(-1200px);
 }
 
 .showSection {
@@ -341,4 +329,269 @@ button.about-btn:focus {
     background-color: #FFD700 !important;
     border-color: #FFD700 !important;
     box-shadow: none !important;
+}
+
+/* CONTACT FORM */
+
+.form-container {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+}
+
+h4.form-text {
+    display: none;
+}
+
+.form-btn {
+    display: none;
+}
+
+input.form-control,
+textarea.form-control {
+    background-color: transparent !important;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    padding: 0;
+    color: white;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid white;
+    box-shadow: none;
+    color: white;
+}
+
+label.form-label {
+    font-size: 13px;
+    margin: 0;
+    position: relative;
+    bottom: 5px;
+}
+
+.about-me-section .col:first-of-type {
+    margin-top: 100px;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 600px) {
+    .main-container {
+        margin-top: 15rem;
+    }
+
+    .contact-btn-container {
+        display: none;
+    }
+
+    .hideSection {
+        transform: translateY(-1400px);
+    }
+
+    .waves {
+        height: 200px;
+    }
+
+    .form-container {
+        display: block;
+    }
+
+    h4.form-text {
+        display: block;
+    }
+
+    .form-btn {
+        display: block;
+    }
+
+    .skill-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .bootstrap {
+        bottom: 20px;
+    }
+
+    .html5 {
+        left: 250px;
+    }
+
+    .css3 {
+        bottom: 200px;
+        left: 150px;
+    }
+
+    .js {
+        bottom: 250px;
+    }
+
+    .typescript {
+        bottom: 70px;
+        right: 150px;
+    }
+
+    .redux {
+        top: 450px;
+    }
+
+    .express {
+        bottom: 340px;
+    }
+
+    .about-me-section .col:first-of-type {
+        margin-top: 100px;
+    }
+
+    .about-me-section .col:last-of-type {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 720px) {
+
+
+    .jumbotron h1 {
+        font-size: 80px;
+    }
+
+    .jumbotron h5 {
+        font-size: 20px;
+    }
+
+    .main-title {
+        margin-left: 3em;
+    }
+
+    .waves {
+        top: 95vh;
+    }
+}
+
+
+
+
+@media (min-width: 720px) and (max-width: 900px) {
+
+    .jumbotron h1 {
+        font-size: 90px;
+    }
+
+    .jumbotron h5 {
+        font-size: 25px;
+    }
+
+    .css3 {
+        bottom: 300px;
+        left: 320px;
+    }
+}
+
+
+@media (min-width: 900px) {
+
+    .main-container {
+        margin-top: 7rem;
+    }
+
+    .element {
+        display: block;
+        font-size: 20px;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .main-title {
+        margin-left: 9rem;
+    }
+
+    .jumbotron h1 {
+        font-size: 90px;
+        margin: 0 20px;
+        line-height: 1;
+    }
+
+    .jumbotron h5 {
+        font-size: 25px;
+        margin: 0 20px;
+        line-height: 1;
+    }
+
+    .button-container {
+        margin: 0 20px;
+    }
+
+    .icons-container {
+        margin-top: 70px;
+        gap: 1.5rem;
+    }
+
+
+    .html5 {
+        left: 400px;
+    }
+
+    .css3 {
+        left: 600px;
+
+    }
+
+    .js {
+        bottom: 300px;
+        right: 200px;
+    }
+
+    .react {
+        top: 70px;
+        right: 50px;
+    }
+
+    .nodejs {
+        top: 200px;
+        right: 620px;
+    }
+
+    .git {
+        top: 210px;
+        left: -10px;
+    }
+
+    .typescript {
+        bottom: 30px;
+        right: 50px;
+    }
+
+    .redux {
+        top: 10px;
+        right: 550px;
+    }
+
+    .express {
+        bottom: 150px;
+        left: 950px;
+    }
+
+    .form-container {
+        margin-top: 0;
+    }
+
+    .about-me-section .row {
+        margin-top: 150px;
+    }
+
+    .about-me-section .col:first-of-type {
+        padding-right: 50px;
+        margin-top: 50px;
+    }
+
+    .waves {
+        height: 400px;
+        top: 91vh;
+
+    }
 }

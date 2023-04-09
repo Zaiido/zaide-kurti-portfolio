@@ -27,7 +27,7 @@ const MainJumbotron = (props) => {
 
     })
     return (
-        <> <Jumbotron>
+        <Jumbotron>
             <Navbar expand="lg">
                 <Container>
                     <Navbar.Brand href="#home"><img src="./assets/logo.png" alt="" /></Navbar.Brand>
@@ -72,7 +72,7 @@ const MainJumbotron = (props) => {
 
             <Container fluid className="mx-lg-5 px-lg-5">
                 <div className="d-flex main-container">
-                    <div className="main-title ml-lg-5 pl-lg-3">
+                    <div className="main-title">
                         <div className="title">
                             <p className="element">&lt;h1&gt;</p>
                             <h1>Zaide Kurti</h1>
@@ -83,15 +83,17 @@ const MainJumbotron = (props) => {
                             <em><h5>Full Stack Developer</h5></em>
                             <p className="element">&lt;/h5&gt;</p>
                         </div>
-                        <div className="mt-4">
+                        <p className="element">&lt;button&gt;</p>
+                        <div className="button-container">
                             <Button onMouseOver={() => {
                                 document.querySelector('.arrow').style.transform = "translateX(-3px)"
                             }} onMouseLeave={() => {
                                 document.querySelector('.arrow').style.transform = "translateX(-10px)"
                             }} onClick={() => props.showAbout(true)}
-                                className="about-btn">About me</Button>
+                                className="contact-btn">About me</Button>
                             <svg className="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213"><path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path></svg>
                         </div>
+                        <p className="element">&lt;/button&gt;</p>
                     </div>
                     <div className="d-lg-flex flex-column d-none ml-auto icons-container">
                         <Link to="https://www.linkedin.com/in/zaide-kurti-o1920/">
@@ -118,7 +120,7 @@ const MainJumbotron = (props) => {
 
             </div>
         </Jumbotron>
-        </>
+
     )
 }
 
