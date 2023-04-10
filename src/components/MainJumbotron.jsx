@@ -117,9 +117,9 @@ const MainJumbotron = (props) => {
             <div className="scroll-icon">
                 <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#1B1B1E" stroke="#1B1B1E"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <g fill="none" fillRule="evenodd"> <path d="m0 0h32v32h-32z"></path> <path d="m13.5 0c7.1797017 0 13 5.82029825 13 13v6c0 7.1797017-5.8202983 13-13 13-7.17970175 0-13-5.8202983-13-13v-6c0-7.17970175 5.82029825-13 13-13zm0 2c-6.07513225 0-11 4.92486775-11 11v6c0 6.0751322 4.92486775 11 11 11 6.0751322 0 11-4.9248678 11-11v-6c0-6.07513225-4.9248678-11-11-11zm0 5c.5522847 0 1 .44771525 1 1v6c0 .5522847-.4477153 1-1 1s-1-.4477153-1-1v-6c0-.55228475.4477153-1 1-1z" fill="#ffffff" fillRule="nonzero" transform="translate(2.5)"></path> </g> </g></svg>
                 <svg className="down-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213"><path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path></svg>
-
             </div>
         </Jumbotron>
+
 
     )
 }

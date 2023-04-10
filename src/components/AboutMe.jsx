@@ -5,6 +5,8 @@ const AboutMe = (props) => {
     useEffect(() => {
         if (props.showSection) {
             document.querySelector("body").style.overflow = "hidden"
+        } else {
+            document.querySelector("body").style.overflow = "auto"
         }
     })
     return (
